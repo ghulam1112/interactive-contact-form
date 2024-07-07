@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: #081b29;
+}
+h2 {
+  font-size: 60px;
+}
+h2 span {
+  color: #0ef;
+}
+h4 {
+  font-size: 29px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.7;
+  margin: 15px 0 30px;
+}
+p {
+  color: aliceblue;
+  font: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+.footer-cont {
+  margin-top: 5%;
+  margin-left: 3%;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.second, .Input-section {
+  width: 47%;
+}
+input, textarea {
+  width: 86%;
+  outline: none;
+  height: 50px;
+  margin-bottom: 7px;
+  background-color: #555557;
+  color: #000;
+  border-radius: 8px;
+  border: none;
+}
+textarea {
+  height: 38%;
+}
+form {
+
+  margin-top: 2rem;
+}
+@keyframes slideLeft {
+  0% {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+.Home-content {
+  max-width: 47%;
+}
+.Home-content h3 {
+  font-size: 32px;
+ animation: slideBottom 1s ease forwards;
+  animation-delay: .7s;
+}
+.Home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+  animation: slideTop 1s ease forwards;
+  animation-delay: .7s;
+}
+.Home-content h3 span {
+  color: #0ef;
+}
+.Home-content h1 {
+  font-size: 56px;
+}
+.Home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0ef;
+  background: transparent;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  text-decoration: none;
+  margin: 30px 15px 30px 0px;
+  transition: 0.5s ease;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.Home-sci a:hover {
+  color: #081b29;
+  background-color: #0ef;
+  box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+  display: inline-block;
+  background-color: #0ef;
+  padding: 12px 28px;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #081b29;
+  font-size: 16px;
+  transition: .3s;
+  animation: slideTop .5s ease forwards;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+.success {
+  color: white;
+  font-size: 1em;
+}

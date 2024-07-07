@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="Assets/Internee-task3.css">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style></style>
+</head>
+
+<body>
+  <div class="footer-cont">
+    <div class="footer-row">
+      <div class="about-text second">
+        <h2 style="text-align: center; font-size: 40px;">Contact <span>Me</span></h2>
+        <h4>Let's work together!</h4>
+        <p>I'm passionate about collaborating with clients to translate their visions into successful
+          digital experiences. Whether you have a clear concept or need help brainstorming ideas, I'm here
+          to guide you through the process. Feel free to reach out and discuss your project, and let's
+          explore how my skills and expertise can contribute to achieving your goals.</p>
+        <div class="contact-list" style="list-style: none;">
+          <li style="padding-bottom: 10px;"><i class="bx bxs-send"
+              style="color: #0ef; padding-right: 9px;"></i>Contact@gmail.com</li>
+          <li><i class="bx bxs-phone" style="color: #0ef; padding-right: 9px;"></i>0123456789</li>
+        </div>
+        <div class="Home-sci ms-4">
+          <a href="https://www.youtube.com/@InterneePk" style="--i:8">
+            <i class="fa-brands fa-square-youtube"></i></a>
+          <a href="https://www.instagram.com/internee.pk/" style="--i:10"><i
+              class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://web.facebook.com/p/Interneepk-100093222249320/?_rdc=1&_rdr" style="--i:7"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/Internee_pk" style="--i:9" target="_blank"><i
+              class="fa-brands fa-square-twitter"></i></a>
+        </div>
+      </div>
+      <div class="Input-section">
+        <form id="contactForm">
+          <div>
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            <span class="error" id="nameError"></span>
+          </div>
+          <div>
+            <!-- <label for="email">Email:</label> -->
+            <input type="email" id="email" name="email" placeholder="Enter your E-mail" required>
+            <span class="error" id="emailError"></span>
+          </div>
+          <div>
+            <!-- <label for="subject">Subject:</label> -->
+            <input type="text" id="subject" name="subject" placeholder="Enter your Subject" required>
+            <span class="error" id="subjectError"></span>
+          </div>
+          <div>
+            <!-- <label for="message">Message:</label> -->
+            <textarea rows="14" id="message" name="message" placeholder="Enter your Message" required></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+          <input class="btn-box" type="submit" value="Submit">
+          <div id="successMessage" class="success"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="Assets/Internee-task3.js"></script>
+</body>
+
+</html>
